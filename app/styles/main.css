@@ -89,7 +89,6 @@ header {
 	-moz-box-shadow: 0px 0px 0px -4px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 0px -4px rgba(0,0,0,0.75);
 
-	padding-bottom: 10px;
 	background: #f7f7f7; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f7f7f7 0%, #ededed 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top,  #f7f7f7 0%,#ededed 100%); /* Chrome10-25,Safari5.1-6 */
@@ -98,7 +97,7 @@ header {
 }
 
 .temperature{
-	padding: 40px 10px 5px 10px;
+	padding: 30px 0px 5px 20px;
 	text-align: center;
 }
 .temperature p {
@@ -114,39 +113,56 @@ header {
 	-webkit-text-fill-color: transparent;
 }
 
-.status-bar{
-	margin: 20px auto;
-	max-width: 30%;
+.temperature-metric{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.metric{
+	display: inline-block;
+	background: #189AD9;
+	padding: 10px 20px;
+	margin: 20px;
+	border-radius: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	-webkit-box-shadow: 0px 10px 0px -4px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 10px 0px -4px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.1);
+}
+.metric-selected {
+	display: inline-block;
+	background: #fff;
+	padding: 10px 20px;
+	margin: 20px;
 	border: 1px solid #189AD9;
-	border-radius: 5px;
+	border-radius: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: #189AD9;
+}
+
+.status-bar{
+	margin: 15px auto 0px auto;
+	max-width: 100%;
 	text-align: center;
 	text-transform: uppercase;
 	font-family: 'Roboto', serif;
-	font-weight: 300;
 	font-size: 16px;
 	color: #189AD9;
+	background: #e1e1e1;
 }
 .status{
-	padding: 10px
-}
-.power{
-	padding: 30px;
-	width: 30%;
-	margin: 0 auto;
+	padding: 10px 0;
 }
 .shower-status{
 	width: 100%;
 }
-.power-container {
-	background: #f7f7f7; /* Old browsers */
-	background: -moz-linear-gradient(top,  #f7f7f7 0%, #ededed 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  #f7f7f7 0%,#ededed 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  #f7f7f7 0%,#ededed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
-
-	-webkit-box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.45);
-	-moz-box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.45);
-	box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.45);
+.power-container{
+	max-width: 70%;
+	margin: 0 auto;
+}
+.power-button{
+	width: 100%;
 }
 .alerts{
 	width: 100%;
