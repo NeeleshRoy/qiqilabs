@@ -29,21 +29,21 @@
 
     <header>
       <div class="logo-container">
-        <img src="images/QiQiLogo.png" alt="QiQi Logo" id="logo"/>
+        <img src="../images/QiQiLogo.png" alt="QiQi Logo" id="logo"/>
       </div>
     </header>
 
     <div class="setting">
       <div class="slider-bar">
         <p>Set Warmup Temperature (C):</p>
-        <input type="range" class="sliders" min="85" max="105" value="90" step="1" onchange="" />
+        <input type="range" class="sliders" min="85" max="105" value="90" step="1" onchange="showTempValue(this.value)" />
         <span class="temperature-value">90</span>
       </div>
 
       <div class="slider-bar">
         <p>Set Maximum shower length (minutes):</p>
-        <input type="range" class="sliders" min="10" max="60" value="0" step="1" onchange="" />
-        <span class="time-value">68</span>
+        <input type="range" class="sliders" min="10" max="60" value="10" step="1" onchange="showTimeValue(this.value)" />
+        <span class="time-value">10</span>
       </div>
 
       <div class="device-name">
@@ -53,7 +53,7 @@
 
       <div class="wake-up-time">
         <p>Set shower wake up time (Hr:Min):</p>
-        <input type="time" class="wakeup" >
+        <input type="time" placeholder="Enter time" class="wakeup" >
       </div>
     </div>
 

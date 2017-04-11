@@ -141,53 +141,65 @@ header {
 	font-family: 'Roboto', sans-serif;
 	color: #189AD9;
 }
-
-.status-bar{
-	margin: 15px auto 0px auto;
-	max-width: 100%;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: 'Roboto', serif;
-	font-size: 16px;
-	color: #189AD9;
-	background: #e1e1e1;
-}
-.status{
-	padding: 10px 0;
-}
 .shower-status{
 	width: 100%;
 }
 .power-container{
-	max-width: 70%;
+	max-width: 60%;
 	margin: 0 auto;
 }
 .power-button{
 	width: 100%;
 	cursor: pointer;
 }
-.alerts{
-	width: 100%;
-	max-height: 40px;
-	padding: 10px;
 
-	position: fixed;
-	bottom: 0px;
-
-	border-top: 2px solid #A8CD50;
-	border-bottom: 2px solid #189AD9;
-
-	background: #f7f7f7; /* Old browsers */
-	background: -moz-linear-gradient(top,  #f7f7f7 0%, #ededed 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  #f7f7f7 0%,#ededed 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  #f7f7f7 0%,#ededed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
-}
-.alerts p {
-	font-family: 'Roboto', serif;
-	font-weight: 300;
-	font-size: 14px;
+ul.status{
 	text-align: center;
+	padding-bottom: 30px;
+	font-family: 'Roboto', sans-serif;
+}
+
+ul.status li {
+	display: inline-block;
+	margin-right: 20px;
+	color: #c1c1c1;
+	text-shadow: 0px 0px 2px rgba(150, 150, 150, 0.1);
+}
+.blue {
+	color: #189AD9 !important;
+}
+.green {
+	color: #A8CD50 !important;
+}
+.orange {
+	color: orange !important;
+}
+.notifications{
+	background: #eee;
+	padding: 15px;
+	border-radius: 10px;
+	margin: 0 auto;
+	width: 85%;
+
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.30);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.30);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.30);
+
+	font-family: 'Roboto', sans-serif;
+}
+.notifications-head{
+	padding: 5px 15px 5px 15px;
+	background: #e1e1e1;
+	margin: -15px;
+	font-weight: 700;
+
+	text-transform: uppercase;
+	color: #4c4c4c;
+}
+.notifications-body {
+	padding: 30px 15px 20px 15px;
+	margin: -15px;
+	color: #4c4c4c;
 }
 
 /****************

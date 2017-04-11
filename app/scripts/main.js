@@ -1,4 +1,6 @@
 let power = true;
+let arr = $('.status li');
+let i = 0;
 
 function changeMetric() {
   $('.celsius').click(function() {
@@ -23,6 +25,14 @@ function switchPower(){
       power = true;
     }
   });
+}
+
+function showTempValue(newValue) {
+  $('.temperature-value').html(newValue);
+}
+
+function showTimeValue(newValue) {
+  $('.time-value').html(newValue);
 }
 
 switchPower();

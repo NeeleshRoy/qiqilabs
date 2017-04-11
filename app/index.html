@@ -34,7 +34,7 @@
 
       <a href="/settings.html"><img class="settings-icon" src="images/settings.svg" alt="settings"></a>
 
-      <a href="#"><img class="power-icon" src="images/off.svg" alt="power"></a>
+      <a href="#"><img class="power-icon" src="images/exit.svg" alt="power"></a>
     </header>
 
     <div class="main">
@@ -50,20 +50,26 @@
           <span>farenheit</span>
         </div>
       </div>
-
-      <div class="status-bar">
-        <div class="status">
-          <p>warm up</p>
-        </div>
-      </div>
     </div>
 
     <div class="power-container">
-        <img src="images/power-on.svg" alt="" class="power-button">
+        <img src="images/power-on.svg" onclick="switchPower()" alt="" class="power-button">
     </div>
 
-    <div class="alerts">
-      <p>Battery Voltage is Low</p>
+    <ul class="status">
+      <li>Stand by</li>
+      <li>Warm Up</li>
+      <li class="green">Ready</li>
+      <li>On</li>
+    </ul>
+
+    <div class="notifications">
+      <div class="notifications-head">
+        <p>Updates</p>
+      </div>
+      <div class="notifications-body">
+        <p>Battery voltage is low</p>
+      </div>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
