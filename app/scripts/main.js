@@ -1,6 +1,4 @@
 let power = true;
-let arr = $('.status li');
-let i = 0;
 
 function changeMetric() {
   $('.celsius').click(function() {
@@ -35,5 +33,7 @@ function showTimeValue(newValue) {
   $('.time-value').html(newValue);
 }
 
-switchPower();
-changeMetric();
+$('document').ready(() => {
+  switchPower();
+  changeMetric();
+});
